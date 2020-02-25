@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.allever.app.virtual.call">
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+
+    <application
+        android:name="com.allever.app.virtual.call.app.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/FullScreenStyle"
+        tools:ignore="ExtraText,GoogleAppIndexingWarning">
+        <activity
+            android:name="com.allever.app.virtual.call.ui.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.HomeActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.allever.app.virtual.call.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.virtual.call.ui.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.virtual.call.ui.IncomeCallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.virtual.call.ui.InComeCallSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.virtual.call.ui.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.allever.app.virtual.call.ui.AdvancedIncomeSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.allever.app.virtual.call.ui.RingtonePickerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.WallPagerPickerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="com.allever.app.virtual.call.service.VirtualCallService" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY_VALUE}"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+    </application>
+
+</manifest>

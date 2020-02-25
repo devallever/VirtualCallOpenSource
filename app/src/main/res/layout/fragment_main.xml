@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/default_gray">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_below="@+id/top_bar"
+		>
+
+
+		<LinearLayout
+			style="@style/setting_item_container_style">
+
+			<TextView
+				style="@style/setting_item_label_style"
+				android:text="@string/countdown"/>
+
+			<EditText
+				style="@style/setting_item_et_style"
+				android:id="@+id/setting_item_et_time"
+				android:hint="秒"
+				android:inputType="number"
+				android:maxLength="2"/>
+		</LinearLayout>
+		<include layout="@layout/include_divider_line"/>
+
+
+		<LinearLayout
+			style="@style/setting_item_container_style">
+
+			<TextView
+				style="@style/setting_item_label_style"
+				android:text="@string/phone"/>
+
+			<EditText
+				style="@style/setting_item_et_style"
+				android:id="@+id/setting_item_et_phone"
+				android:hint="@string/phone"
+				android:inputType="number"
+				android:maxLength="20"/>
+		</LinearLayout>
+		<include layout="@layout/include_divider_line"/>
+
+
+		<LinearLayout
+			style="@style/setting_item_container_style">
+
+			<TextView
+				style="@style/setting_item_label_style"
+				android:text="@string/contact"/>
+
+			<EditText
+				style="@style/setting_item_et_style"
+				android:id="@+id/setting_item_et_contact"
+				android:hint="姓名"/>
+		</LinearLayout>
+		<include layout="@layout/include_divider_line"/>
+
+		<LinearLayout
+			style="@style/setting_item_container_style">
+
+			<TextView
+				style="@style/setting_item_label_style"
+				android:text="@string/place"/>
+
+			<EditText
+				style="@style/setting_item_et_style"
+				android:id="@+id/setting_item_et_local"
+				android:hint="@string/place"/>
+		</LinearLayout>
+		<include layout="@layout/include_divider_line"/>
+
+
+		<LinearLayout
+			style="@style/setting_item_container_style"
+			android:background="@color/default_gray">
+
+			<TextView
+				android:id="@+id/tvChooseContact"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="@string/select_contact"
+				android:gravity="center"
+				android:layout_gravity="center"
+				android:textColor="@color/default_theme_color"
+				android:textStyle="bold"
+				android:textSize="12sp"
+				android:padding="5dp" />
+		</LinearLayout>
+		<include layout="@layout/include_divider_line"/>
+
+		<LinearLayout
+			style="@style/setting_item_container_style">
+
+			<TextView
+				style="@style/setting_item_label_style"
+				android:text="@string/advanced_setting"/>
+			<TextView
+				android:id="@+id/setting_item_advanced"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="3"
+				android:text="铃声/震动/壁纸/重复"
+				android:gravity="center|end"
+				android:drawableEnd="@drawable/ic_arrow">
+			</TextView>
+		</LinearLayout>
+		<include layout="@layout/include_divider_line"/>
+
+		<FrameLayout
+			style="@style/setting_item_container_style"
+			android:id="@+id/banner_container"
+			android:paddingStart="0dp"
+			android:paddingEnd="0dp"
+			android:background="@color/default_gray"
+			android:visibility="gone"/>
+	</LinearLayout>
+
+	<TextView
+		android:id="@+id/setting_btn_start"
+		android:layout_width="300dp"
+		android:layout_height="56dp"
+		android:background="@drawable/btn_start"
+		android:text="@string/escape_now"
+		android:textColor="@color/white"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="10dp"
+		android:gravity="center"
+		android:textSize="18sp"
+        android:textStyle="bold"
+		android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    android:id="@+id/in_come_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    来电 -->
+    <LinearLayout
+        android:id="@+id/in_come_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:visibility="visible">
+
+        <com.allever.lib.ui.widget.CircleImageView2
+            android:id="@+id/ivAvatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_contact"
+            android:scaleType="centerCrop"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp"/>
+
+
+        <TextView
+            android:id="@+id/in_come_tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="13800013800"
+            android:layout_below="@id/ivAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/in_come_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="张三"
+            android:layout_below="@id/in_come_tv_phone_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/in_come_tv_local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广东 肇庆"
+            android:layout_below="@id/in_come_tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/communicate_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:visibility="gone">
+
+        <com.allever.lib.ui.widget.CircleImageView2
+            android:id="@+id/ivAvatarAccept"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_contact"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp"/>
+
+        <Chronometer
+            android:id="@+id/in_come_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="00:00"
+            android:layout_below="@id/ivAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/in_come_tv_communicate_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="通话中"
+            android:layout_below="@id/in_come_tv_phone_number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/in_come_iv_reject"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_call_reject"/>
+        <ImageView
+            android:id="@+id/in_come_iv_accept"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_call_accept"/>
+
+        <ImageView
+            android:id="@+id/in_come_iv_send_message"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_message"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

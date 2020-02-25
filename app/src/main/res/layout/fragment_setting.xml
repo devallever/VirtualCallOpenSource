@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/setting_tv_permission"
+            style="@style/setting_item"
+            android:drawableEnd="@drawable/ic_arrow"
+            android:text="@string/permission_setting" />
+
+        <include layout="@layout/include_divider_line" />
+
+        <TextView
+            android:id="@+id/setting_tv_share"
+            style="@style/setting_item"
+            android:drawableEnd="@drawable/ic_share"
+            android:text="@string/share" />
+
+        <include layout="@layout/include_divider_line" />
+
+        <TextView
+            android:id="@+id/setting_tv_feedback"
+            style="@style/setting_item"
+            android:drawableEnd="@drawable/ic_feedback"
+            android:text="@string/feedback" />
+
+        <include layout="@layout/include_divider_line" />
+
+        <TextView
+            android:id="@+id/setting_tv_about"
+            style="@style/setting_item"
+            android:drawableEnd="@drawable/ic_about"
+            android:text="@string/about" />
+
+        <include layout="@layout/include_divider_line" />
+
+        <TextView
+            android:id="@+id/setting_tv_support"
+            style="@style/setting_item"
+            android:drawableEnd="@drawable/ic_support"
+            android:text="@string/support"
+            android:visibility="visible"/>
+
+        <include layout="@layout/include_divider_line"
+            android:visibility="visible"/>
+
+        <FrameLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

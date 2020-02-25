@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+        <TextView
+            android:id="@+id/id_main_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/default_theme_color"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="@dimen/default_icon_width"
+            android:layout_height="@dimen/default_icon_height"
+            android:src="@drawable/recommend_ic_gift"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/id_main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:layout_above="@+id/divide_line" />
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/tab_layout"
+        android:background="#cccccc" />
+
+    <com.allever.lib.common.ui.widget.tab.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"/>
+
+</RelativeLayout>

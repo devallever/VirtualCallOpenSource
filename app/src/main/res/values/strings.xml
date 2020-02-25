@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Call Prank</string>
+
+    <!-- 设置 -->
+    <string name="setting">Setting</string>
+    <string name="setting_in_come_call">Call setup</string>
+    <string name="tab_guide">Instructions for use</string>
+
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="about">About</string>
+    <string name="support">Support us</string>
+    <string name="advanced_setting">Advanced settings</string>
+    <string name="ringtone_picker">Select ringtone</string>
+    <string name="wall_pager_picker">Choose wallpaper</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="permission_setting">Setting permissions</string>
+    <string name="about_right">Copyright @2018–2019 Virtual Caller All Rights Reserved</string>
+
+    <string name="guide">Desperate, tired, blind, trivial, difficult to open, an urgent need to get out of the phone to save you from the fire. Leaders, colleagues, elders, friends, lovers call, all can be customized. A simple and practical virtual phone software, a good helper to get out.
+The star idol calls you, and every day, I love you to play Moringcall, and every day is a wonderful day. The effect is realistic, and anyone who wants to call you can. You can also spoof friends and pretend that Love beans give him a call.
+Product features and features:
+\n[One-touch call] Quickly activate the default virtual call, one-click emergency.
+\n[Get out of the call] Customize the analog caller nickname, avatar, phone number, ringtone, vibration mode, etc., find a reason for yourself to open, want to call anyone.
+\n[Free voice] Customize the voice content of the call, record your own, let Aidou give you a Moringcall every day. I want to hear what voice content is all right.
+\n [realistic interface] high imitation realistic mobile phone brand model system call interface, left and right sliding to switch the caller interface, play a full set, pay attention to the details of the stuffing, no flaws to get out.
+\n\nNote:
+\n1. Make sure you have permission to launch the app in the background before using it. You can go to the app details page to set it. \n\n2. Be careful not to disable the screen when using it. Otherwise no effect, later update.</string>
+
+
+    <string name="permission_tips">We need
+        \n[storage permission] to get the ringtone of your device
+        \n[read contact permission] to get your contact to achieve one-click contact and random call function
+        \n [phone information] in order to count device information, make Better user experience
+        \n Rejecting the appropriate permissions will not work with some features</string>
+    <string name="permission_accept">Agree</string>
+    <string name="permission_reject">Refuse</string>
+
+    <string name="escape_now">Escape now</string>
+    <string name="countdown">Countdown</string>
+    <string name="phone">Phone</string>
+    <string name="contact">Contact</string>
+    <string name="place">Place</string>
+    <string name="avatar">Avatar</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="repeat">Repeat</string>
+    <string name="repeat_incall">RepeatInCall</string>
+    <string name="select_contact">One-click to select a contact</string>
+    <string name="random_contact">Random contact</string>
+    <string name="interval">Interval</string>
+    <string name="count">Count</string>
+    <string name="reset">Reset</string>
+
+    <string name="share_content">【%s】This application is very good, I recommend it. Get address \n%s</string>
+</resources>

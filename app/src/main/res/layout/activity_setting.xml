@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/default_background_color">
+
+	<include
+		layout="@layout/include_top_bar"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_below="@+id/top_bar"
+		android:paddingStart="20dp"
+		android:paddingEnd="20dp"
+		tools:ignore="RtlSymmetry">
+
+
+		<TextView
+			style="@style/setting_item"
+			android:id="@+id/setting_tv_share"
+			android:text="@string/share"
+			android:drawableEnd="@drawable/ic_feedback"/>
+
+		<include layout="@layout/include_divider_line"/>
+
+		<TextView
+			style="@style/setting_item"
+			android:id="@+id/setting_tv_feedback"
+			android:text="@string/feedback"
+			android:drawableEnd="@drawable/ic_feedback"/>
+
+		<include layout="@layout/include_divider_line"/>
+
+		<TextView
+			style="@style/setting_item"
+			android:id="@+id/setting_tv_about"
+			android:text="@string/about"
+			android:drawableEnd="@drawable/ic_about"/>
+
+		<include layout="@layout/include_divider_line"/>
+
+
+	</LinearLayout>
+
+</RelativeLayout>

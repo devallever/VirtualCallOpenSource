@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/item_ringtone_iv_ring"
+        android:layout_width="@dimen/default_icon_width"
+        android:layout_height="@dimen/default_icon_height"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_ringtone"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/item_ringtone_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/item_ringtone_iv_ring"
+        android:text="默认"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:layout_toStartOf="@+id/item_ringtone_iv_check"/>
+
+    <ImageView
+        android:id="@+id/item_ringtone_iv_check"
+        android:layout_width="@dimen/default_icon_height"
+        android:layout_height="@dimen/default_icon_width"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_checked"
+        android:scaleType="centerInside"
+        android:tint="@color/default_theme_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider_color"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

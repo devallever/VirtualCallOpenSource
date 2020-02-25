@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_background_color">
+
+    <include
+        layout="@layout/include_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/top_bar"
+        tools:ignore="RtlSymmetry">
+
+        <LinearLayout
+            style="@style/setting_item_container_style">
+
+            <TextView
+                style="@style/setting_item_label_style"
+                android:text="@string/avatar"/>
+
+            <RelativeLayout
+                android:id="@+id/setting_item_avatar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+                <com.allever.lib.ui.widget.CircleImageView2
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="@dimen/default_icon_width"
+                    android:layout_height="@dimen/default_icon_height"
+                    android:src="@drawable/ic_contact"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tvAvatarPath"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="2"
+                    android:gravity="center_vertical"
+                    android:layout_toStartOf="@+id/ivAvatar"
+                    android:layout_marginEnd="10dp"
+                    android:text=""/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            style="@style/setting_item_container_style"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/tvResetAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/reset"
+                android:gravity="end|center_vertical"
+                android:layout_gravity="end"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/default_theme_color"/>
+
+        </FrameLayout>
+        <include layout="@layout/include_divider_line"/>
+
+        <LinearLayout
+            style="@style/setting_item_container_style">
+
+            <TextView
+                style="@style/setting_item_label_style"
+                android:text="@string/random_contact"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/setting_item_switch_redom_contact"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center|end"
+                android:textColor="@color/default_theme_color"
+                android:checked="false"/>
+        </LinearLayout>
+        <include layout="@layout/include_divider_line"/>
+
+
+        <LinearLayout
+            style="@style/setting_item_container_style">
+
+            <TextView
+                style="@style/setting_item_label_style"
+                android:text="@string/ringtone"/>
+            <TextView
+                android:id="@+id/setting_item_tv_ringtone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Default"
+                android:gravity="center|end"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:textColor="@color/default_theme_color">
+            </TextView>
+        </LinearLayout>
+        <include layout="@layout/include_divider_line"/>
+
+        <LinearLayout
+            style="@style/setting_item_container_style">
+
+            <TextView
+                style="@style/setting_item_label_style"
+                android:text="@string/vibrate"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/setting_item_switch_vibrator"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center|end"
+                android:textColor="@color/default_theme_color"
+                android:checked="true">
+            </androidx.appcompat.widget.SwitchCompat>
+        </LinearLayout>
+        <include layout="@layout/include_divider_line"/>
+
+        <LinearLayout
+            style="@style/setting_item_container_style"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/setting_item_label_style"
+                android:text="@string/wallpaper"/>
+            <TextView
+                android:id="@+id/setting_item_tv_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="@string/wallpaper"
+                android:gravity="center|end"
+                android:drawableEnd="@drawable/ic_arrow"
+                android:textColor="@color/default_theme_color">
+            </TextView>
+        </LinearLayout>
+        <include layout="@layout/include_divider_line"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            style="@style/setting_item_container_style">
+
+            <TextView
+                style="@style/setting_item_label_style"
+                android:text="@string/repeat_incall"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/setting_item_switch_repeat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center|end"
+                android:textColor="@color/default_theme_color"
+                android:checked="true">
+            </androidx.appcompat.widget.SwitchCompat>
+        </LinearLayout>
+        <include layout="@layout/include_divider_line"/>
+
+        <LinearLayout
+            android:id="@+id/setting_item_repeat_interval"
+            style="@style/setting_item_container_style"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/setting_item_container_style"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp">
+                <TextView
+                    style="@style/setting_item_label_style"
+                    android:text="@string/interval"/>
+                <EditText
+                    style="@style/setting_item_et_style"
+                    android:id="@+id/setting_item_et_repeat_interval"
+                    android:hint="秒"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+            </LinearLayout>
+            <include layout="@layout/include_divider_line"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/setting_item_repeat_count"
+            style="@style/setting_item_container_style"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                style="@style/setting_item_container_style"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp">
+                <TextView
+                    style="@style/setting_item_label_style"
+                    android:text="@string/count"/>
+                <EditText
+                    style="@style/setting_item_et_style"
+                    android:id="@+id/setting_item_et_repeat_count"
+                    android:hint="次"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+            </LinearLayout>
+            <include layout="@layout/include_divider_line"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

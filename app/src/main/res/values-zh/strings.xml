@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">虚拟来电</string>
+
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+    <string name="setting_in_come_call">来电设置</string>
+    <string name="tab_guide">使用说明</string>
+
+    <string name="share">分享</string>
+    <string name="feedback">反馈</string>
+    <string name="about">关于</string>
+    <string name="support">支持我们</string>
+    <string name="advanced_setting">高级设定</string>
+    <string name="ringtone_picker">选择铃声</string>
+    <string name="wall_pager_picker">选择壁纸</string>
+    <string name="privacy">隐私政策</string>
+    <string name="permission_setting">设置权限</string>
+    <string name="about_right">版权所有@2018–2019 虚拟来电保留所有权利</string>
+
+    <string name="guide">应酬疲惫，相亲尴尬，琐事缠身，难以开口，急需一个脱身电话救你于水火。领导、同事、长辈、朋友、恋人来电、统统可以自定义。一款简单实用的虚拟电话软件，脱身的好帮手。
+明星偶像给你打来电话，天天让爱豆大佬给你打Moringcall，每天都是美好的一天。效果逼真，想要谁给你来电都可以。也可以恶搞朋友，假装爱豆给他来电。
+产品功能与特色：
+\n【一键来电】快速启动默认设置的虚拟来电，一键救急。
+\n【脱身来电】自定义设置模拟来电者昵称、头像、电话号码、铃声、震动方式等，为自己找个理由开溜，想要谁来电都可以。
+\n【随心语音】自定义来电语音内容，自己录音，让爱豆大佬每天给你打Moringcall。想听什么语音内容都可以。
+\n【逼真界面】高仿逼真多款手机品牌机型的系统来电通话界面，左右滑动选择切换来电通话界面，演戏要全套，注意细节不露馅，无破绽脱身。
+\n\n注意：
+\n1.使用前请确保已有在后台启动应用的权限，可以到应用详情页去设置。\n\n2.使用时注意不要灭屏。否则无效果，后期更新。</string>
+
+
+    <string name="permission_tips">我们需要
+        \n【存储权限】获取您设备的铃声
+        \n【读取联系人权限】获取您的联系人实现一键选择联系人和随机呼叫功能
+        \n【手机信息】以便统计设备信息，做出更好的用户体验
+        \n 拒绝相应的权限将无法使用部分功能</string>
+    <string name="permission_accept">同意</string>
+    <string name="permission_reject">拒绝</string>
+
+    <string name="escape_now">立即逃脱</string>
+    <string name="countdown">倒计时</string>
+    <string name="phone">电话</string>
+    <string name="contact">联系人</string>
+    <string name="place">归属地</string>
+    <string name="avatar">头像</string>
+    <string name="ringtone">铃声</string>
+    <string name="vibrate">震动</string>
+    <string name="wallpaper">壁纸</string>
+    <string name="repeat">重复</string>
+    <string name="repeat_incall">重复来电</string>
+    <string name="select_contact">一键选择联系人</string>
+    <string name="random_contact">随机联系人</string>
+    <string name="interval">间隔</string>
+    <string name="count">次数</string>
+    <string name="reset">恢复默认</string>
+
+    <string name="share_content">【%s】这个应用很不错，推荐一下。获取地址\n%s</string>
+
+</resources>
