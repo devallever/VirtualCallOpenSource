@@ -71,7 +71,7 @@
         android:layout_marginTop="60dp"
         android:visibility="gone">
 
-        <com.allever.lib.ui.widget.CircleImageView2
+        <com.allever.lib.ui.circleimageview.CircleImageView
             android:id="@+id/ivAvatarAccept"
             android:layout_width="96dp"
             android:layout_height="96dp"
