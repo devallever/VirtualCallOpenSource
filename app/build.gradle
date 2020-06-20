@@ -107,10 +107,12 @@ dependencies {
     //local
     implementation project(':permission')
     implementation project(':common')
-    implementation project(':ui')
+    implementation project(':widget')
     implementation project(':comment')
     implementation project(':umeng')
     implementation project(':recommend')
+    implementation project(':circleimageview')
+
     implementation(name: "Toolkit-1.1", ext: 'aar')
 
 
